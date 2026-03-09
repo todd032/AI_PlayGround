@@ -28,6 +28,17 @@ header p {
   color: #c1c8e8;
 }
 
+
+.back-link {
+  color: #d3dcff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
 .hud {
   background: rgba(8, 12, 35, 0.7);
   border: 1px solid #313b73;
