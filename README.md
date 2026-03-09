@@ -34,3 +34,16 @@ python3 -m http.server 4173
 - 좌우 이동으로 떨어지는 메테오를 피하며 생존 점수를 올립니다.
 - 점수는 프레임 기반으로 증가합니다.
 - 최고 점수는 `localStorage`에 저장되어 재방문 시 유지됩니다.
+
+## 게임 제작 프로세스 (Template 기반)
+
+- 기획 입력 템플릿: `docs/templates/game-concept-template.md`
+- Meteor Dodge 기획서 예시: `docs/templates/meteor-dodge-concept.md`
+- 상세 개발 계획 템플릿: `docs/process/game-development-plan-template.md`
+- 전체 워크플로우 안내: `docs/process/WORKFLOW.md`
+
+권장 흐름:
+1. 사용자가 기획 템플릿 작성
+2. Codex가 상세 개발 계획서 작성
+3. 계획 승인 후 구현 진행
+
