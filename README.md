@@ -5,6 +5,7 @@
 ## 폴더 구조
 
 - `games/meteor-dodge/`: 첫 번째 아케이드 게임 Meteor Dodge
+- `games/minesweeper/`: 두 번째 퍼즐 게임 Mini Minesweeper
 
 ## 빠른 실행 (로컬)
 
@@ -18,6 +19,7 @@ python3 -m http.server 4173
 
 - 게임 런처(기본 진입): `http://localhost:4173/`
 - Meteor Dodge 직접 실행: `http://localhost:4173/games/meteor-dodge/`
+- Mini Minesweeper 직접 실행: `http://localhost:4173/games/minesweeper/`
 
 ## GitHub 링크로 바로 플레이하기
 
@@ -35,6 +37,12 @@ python3 -m http.server 4173
 - 점수는 프레임 기반으로 증가합니다.
 - 최고 점수는 `localStorage`에 저장되어 재방문 시 유지됩니다.
 
+## Mini Minesweeper 게임 설명
+
+- 9x9 보드에서 지뢰 10개를 피해 모든 안전 칸을 열면 승리합니다.
+- 첫 클릭은 안전하게 보장되며, 우클릭(모바일은 롱프레스)으로 깃발을 표시할 수 있습니다.
+- 클리어 시간 최고 기록은 `localStorage`에 저장되어 재방문 시 유지됩니다.
+
 ## 게임 제작 프로세스 (Template 기반)
 
 - 기획 입력 템플릿: `docs/templates/game-concept-template.md`
@@ -46,4 +54,3 @@ python3 -m http.server 4173
 1. 사용자가 기획 템플릿 작성
 2. Codex가 상세 개발 계획서 작성
 3. 계획 승인 후 구현 진행
-

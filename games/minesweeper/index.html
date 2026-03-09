@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI PlayGround - Mini Minesweeper</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <h1>Mini Minesweeper</h1>
+        <p>숫자 힌트를 바탕으로 지뢰를 피해 모든 안전 칸을 열어보세요.</p>
+      </header>
+
+      <section class="hud" aria-label="게임 상태">
+        <div>⏱️ 시간: <strong id="timer">0</strong>s</div>
+        <div>🚩 지뢰 추정: <strong id="mine-count">10</strong></div>
+        <div>🏆 최고 기록: <strong id="best-time">-</strong></div>
+        <button id="restart-button" type="button">새 게임</button>
+      </section>
+
+      <section class="status" aria-live="polite">
+        <strong id="status-text">칸을 눌러 시작하세요.</strong>
+      </section>
+
+      <section class="board-wrap">
+        <div id="board" class="board" role="grid" aria-label="지뢰찾기 보드"></div>
+      </section>
+
+      <section class="controls">
+        <p>조작법</p>
+        <ul>
+          <li>좌클릭 / 탭: 칸 열기</li>
+          <li>우클릭: 깃발 표시/해제</li>
+          <li>모바일: 0.45초 길게 눌러 깃발 표시</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

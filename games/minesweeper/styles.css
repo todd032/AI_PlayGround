@@ -1,0 +1,129 @@
+:root {
+  color-scheme: dark;
+  font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+  --cell-size: clamp(30px, 9vw, 42px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #304069, #0b1026 62%);
+  color: #e8eeff;
+}
+
+.game-shell {
+  width: min(94vw, 520px);
+  display: grid;
+  gap: 1rem;
+  padding: 1rem 0 2rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 0.4rem 0 0;
+  color: #c3ccee;
+}
+
+.hud,
+.controls,
+.status {
+  border-radius: 0.8rem;
+  border: 1px solid #354177;
+  background: rgba(9, 15, 39, 0.85);
+  padding: 0.8rem 1rem;
+}
+
+.hud {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7b8fff, #5ed3ff);
+  color: #050a1d;
+  font-weight: 700;
+  padding: 0.55rem 0.85rem;
+}
+
+.status {
+  text-align: center;
+}
+
+.board-wrap {
+  border-radius: 0.8rem;
+  border: 1px solid #354177;
+  background: rgba(9, 15, 39, 0.8);
+  padding: 0.8rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, var(--cell-size));
+  justify-content: center;
+  gap: 4px;
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 1px solid #6073be;
+  border-radius: 6px;
+  background: #2a3b72;
+  color: #f3f6ff;
+  font-weight: 700;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.cell:hover {
+  background: #33498c;
+}
+
+.cell.open {
+  background: #131a38;
+  border-color: #44528f;
+}
+
+.cell.flagged {
+  background: #62480f;
+  border-color: #cb9b2f;
+}
+
+.cell.mine {
+  background: #70262b;
+  border-color: #ff848f;
+}
+
+.n1 { color: #7dd3fc; }
+.n2 { color: #86efac; }
+.n3 { color: #fda4af; }
+.n4 { color: #c4b5fd; }
+.n5 { color: #facc15; }
+.n6 { color: #2dd4bf; }
+.n7 { color: #f9a8d4; }
+.n8 { color: #e5e7eb; }
+
+.controls p {
+  margin: 0 0 0.4rem;
+  font-weight: 700;
+}
+
+.controls ul {
+  margin: 0;
+  padding-left: 1rem;
+  color: #c3ccee;
+}
