@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI PlayGround - Meteor Dodge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <h1>Meteor Dodge</h1>
+        <p>좌우 이동으로 메테오를 피하고 최대한 오래 생존하세요.</p>
+      </header>
+
+      <section class="hud">
+        <div>점수: <strong id="score">0</strong></div>
+        <div>최고점수: <strong id="best-score">0</strong></div>
+        <button id="start-button">게임 시작</button>
+      </section>
+
+      <canvas id="game" width="420" height="600" aria-label="게임 캔버스"></canvas>
+
+      <section class="controls">
+        <p>조작법</p>
+        <ul>
+          <li>← / A : 왼쪽 이동</li>
+          <li>→ / D : 오른쪽 이동</li>
+          <li>터치 환경: 화면 드래그</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
