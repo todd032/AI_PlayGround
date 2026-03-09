@@ -34,13 +34,13 @@ header p {
 }
 
 
-.back-link {
+.launcher-button {
   color: #d3dcff;
   text-decoration: none;
   font-weight: 600;
 }
 
-.back-link:hover {
+.launcher-button:hover {
   text-decoration: underline;
 }
 
@@ -138,3 +138,5 @@ button {
   padding-left: 1rem;
   color: #c3ccee;
 }
+
+.top-nav { display: flex; justify-content: flex-end; }

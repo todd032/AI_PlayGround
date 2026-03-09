@@ -1,0 +1,8 @@
+body { margin:0; min-height:100vh; display:grid; place-items:center; background:#101426; color:#eef; font-family:system-ui,sans-serif; }
+.app { text-align:center; width:min(92vw,340px); }
+.top-nav{display:flex;justify-content:flex-end;margin-bottom:.75rem}
+.launcher-button{padding:.45rem .75rem;border-radius:999px;border:1px solid #4b5aa2;background:#1a2140;color:#eef;text-decoration:none;font-size:.88rem}
+.board { display:grid; grid-template-columns:repeat(3,84px); gap:8px; margin:1rem 0; justify-content:center; }
+.cell { width:84px; height:84px; font-size:2rem; border:1px solid #4b5aa2; background:#1a2140; color:#fff; border-radius:10px; cursor:pointer; }
+.actions { display:flex; gap:.6rem; justify-content:center; }
+button{padding:.5rem .8rem;border-radius:8px;border:1px solid #4b5aa2;background:#1a2140;color:#eef;cursor:pointer;}
