@@ -8,15 +8,17 @@
 
 ## 실행 방법 (Meteor Dodge)
 
-아래처럼 저장소 루트를 정적 서버로 실행한 뒤 브라우저에서 게임 경로로 접속하세요.
+아래처럼 저장소 루트를 정적 서버로 실행하세요.
 
 ```bash
 python3 -m http.server 4173
 ```
 
-접속 주소:
+그다음 아래 주소로 접속하면 됩니다.
 
-- `http://localhost:4173/games/meteor-dodge/`
+- 기본 진입 URL (즉시 실행): `http://localhost:4173/`
+  - 루트 `index.html`이 `games/meteor-dodge/`로 자동 이동시킵니다.
+- 직접 게임 URL: `http://localhost:4173/games/meteor-dodge/`
 
 ## Meteor Dodge 게임 설명
 
